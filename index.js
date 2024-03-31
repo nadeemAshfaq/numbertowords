@@ -15,7 +15,7 @@ require("number-to-text/converters/id");
 // Enable CORS middleware
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "https://localhost:44333"); // Allow requests from React app origin
-  res.setHeader("Access-Control-Allow-Origin", "https://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin", "https://www.numbertowordsexcel.com");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE"); // Allow specific HTTP methods
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization"); // Allow specific headers
   res.setHeader("Access-Control-Allow-Credentials", true); // Allow cookies, if needed
