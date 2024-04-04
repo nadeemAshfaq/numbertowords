@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 const converter = require("number-to-words");
 const { convertCurrency } = require("number-currency");
+var cors = require("cors");
 
 const numberToText = require("number-to-text");
 require("number-to-text/converters/en-us");
@@ -20,7 +21,7 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Credentials", true); // Allow cookies, if needed
   next();
 });
-
+app.use(cors());
 // Define the starting port number
 let port = process.env.PORT || 8000;
 
